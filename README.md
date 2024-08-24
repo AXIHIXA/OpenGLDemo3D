@@ -1,4 +1,4 @@
-# OpenGLDemo 
+# OpenGLDemo3D
 
 ## Overview
 
@@ -9,16 +9,38 @@ Note: Directory `./var/` contains vertices for the required polyhedral objects.
 Each line denotes a 3D point (x, y, and z coordinates), and each 3 lines denote a triangular facet. 
 Note that many points are duplicated as they appear in multiple facets!
 
+## Dependencies
+
+- C/C++: 
+  - [GLAD](https://glad.dav1d.de/)
+  - Remaining dependencies could be installed via apt:
+```
+apt install libopencv-dev libglm-dev libglew-dev libglfw3-dev mesa-utils libx11-dev libxi-dev libxrandr-dev
+```
+- Python (from PyPI):
+```
+pip install PyOpenGL PyGLM glfw
+```
+
 ## Compile & Run
 
 Execute the following commands in the same directory of this README: 
+
+- C/C++ Version: 
 ```bash
+cd cpp
 mkdir build
 cd build
 cmake -DMAKE_BUILD_TYPE=Release ..
 make 
 cd ..
-./build/OpenGLDemo3D
+./build/OpenGLDemo
+```
+- Python Version:
+```bash
+cd py
+conda activate py3
+python main.py
 ```
 
 ## Usage
