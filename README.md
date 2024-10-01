@@ -28,7 +28,7 @@ sudo reboot
   ```
 - Further Needed for the Python Version (from PyPI):
 ```bash
-pip install PyOpenGL PyGLM glfw
+pip install numpy PyOpenGL PyGLM glfw
 ```
 
 ## Compile & Run
